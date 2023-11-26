@@ -1,0 +1,10 @@
+// Author: Krzysztof Małysa (2020)
+int main() {
+	int i;
+	if (i != 0) error();
+	string s;
+	if (s != "") error();
+	boolean b;
+	if (b) error();
+	return 0;
+}

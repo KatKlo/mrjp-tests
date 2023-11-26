@@ -1,0 +1,11 @@
+// Author: Krzysztof Małysa (2020)
+
+int main() {
+	int i = -142;
+	if (i != -142) error();
+	string s = "test";
+	if (s != "test") error();
+	boolean b = true;
+	if (!b) error();
+	return 0;
+}

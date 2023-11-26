@@ -1,0 +1,13 @@
+// Author: Krzysztof Małysa (2020)
+
+int main() {
+	printInt(42);
+	printString("abc\nxyz");
+	int x = readInt();
+	string s = readString();
+	printInt(x);
+	printString(s);
+	if (x == 0) error();
+
+	return 0;
+}

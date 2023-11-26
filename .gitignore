@@ -2,11 +2,17 @@
 *.ll
 *.o
 
-good/*
-!good/*.lat
-!good/*.input
-!good/*.output
-!good/*.exit_code
+good/basic/*
+!good/basic/*.lat
+!good/basic/*.input
+!good/basic/*.output
+!good/basic/*.exit_code
+
+good/extensions/*
+!good/extensions/*.lat
+!good/extensions/*.input
+!good/extensions/*.output
+!good/extensions/*.exit_code
 
 bad/*
 !bad/*.lat

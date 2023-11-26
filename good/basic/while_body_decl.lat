@@ -1,0 +1,15 @@
+// Author: Krzysztof Małysa (2020)
+int main() {
+	int big_x = 0;
+	while (big_x < 10) {
+        big_x++;
+		int big_x = 0;
+	}
+	if (big_x != 10) error();
+
+	while (big_x < 20) {
+		big_x = big_x + 7;
+	}
+	if (big_x != 24) error();
+	return 0;
+}

@@ -1,0 +1,108 @@
+// Author: Krzysztof Małysa (2021)
+
+void printBool(boolean b) {
+    if (b) printString("true");
+    else printString("false");
+}
+
+int main() {
+    int x = 42, y = x, z = y + 4;
+    int k = -x;
+    boolean f = true, not_f = !f;
+    int i5 = 5, i13 = 13;
+    int add = i13 + i5;
+    int sub = i13 - i5;
+    int mul = i13 * i5;
+    int div = i13 / i5;
+    int mod = i13 % i5;
+
+    printInt(x);
+    printInt(y);
+    printInt(z);
+    printInt(k);
+    printBool(f);
+    printBool(not_f);
+    printInt(add);
+    printInt(sub);
+    printInt(mul);
+    printInt(div);
+    printInt(mod);
+    printInt(foo());
+    test_unary_if();
+    test_bin_if();
+    test_unused_variables();
+    return 0;
+}
+
+int foo() {
+    int a = 44;
+    int b = a;
+    b = b;
+    int c = b;
+    return c;
+}
+
+void test_unary_if() {
+    boolean bbb = true;
+    if (bbb) {
+        printString("if0");
+    }
+    boolean b = true, x = false;
+    if (b) {
+        printString("if1");
+    } else {
+        if (x) {
+            printInt(1);
+        } else {
+            printInt(2);
+        }
+        printString("else1");
+    }
+
+    if (b) {
+        printString("if2");
+    }
+
+    if (!x) {
+        printString("if3");
+    }
+    if (!x) {
+        printString("if4");
+    } else {
+        printString("else4");
+    }
+}
+
+void test_bin_if() {
+    int i1 = 42, i2 = 88;
+    if (i1 < i2) printString("if1"); else printString("else1");
+    if (i1 <= i2) printString("if2"); else printString("else2");
+    if (i1 > i2) printString("if3"); else printString("else3");
+    if (i1 >= i2) printString("if4"); else printString("else4");
+    if (i1 == i2) printString("if5"); else printString("else5");
+    if (i1 != i2) printString("if6"); else printString("else6");
+
+    boolean b1 = true, b2 = false;
+    if (b1 == b2) printString("if7"); else printString("else7");
+    if (b1 != b2) printString("if8"); else printString("else8");
+
+    string s1 = "abc", s2 = "xyz";
+    if (s1 < s2) printString("if9"); else printString("else9");
+    if (s1 <= s2) printString("if10"); else printString("else10");
+    if (s1 > s2) printString("if11"); else printString("else11");
+    if (s1 >= s2) printString("if12"); else printString("else12");
+    if (s1 == s2) printString("if13"); else printString("else13");
+    if (s1 != s2) printString("if14"); else printString("else14");
+
+    string ss = "abc", sss = ss;
+    if (ss == sss) {
+        printString("if19");
+    } else {
+        printString("else19");
+    }
+}
+
+void test_unused_variables() {
+    int x = 42, y = x, z = x + y;
+    printInt(z);
+}
