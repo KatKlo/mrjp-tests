@@ -28,8 +28,16 @@ bad/extensions/*
 !bad/extensions/*.exit_code
 !bad/extensions/*.example_compiler_output
 
-warnings/*
-!warnings/*.lat
-!warnings/*.input
-!warnings/*.output
-!warnings/*.exit_code
+warnings/basic/*
+!warnings/basic/*.lat
+!warnings/basic/*.input
+!warnings/basic/*.output
+!warnings/basic/*.exit_code
+!warnings/basic/*.example_compiler_output
+
+warnings/extensions/*
+!warnings/extensions/*.lat
+!warnings/extensions/*.input
+!warnings/extensions/*.output
+!warnings/extensions/*.exit_code
+!warnings/extensions/*.example_compiler_output
