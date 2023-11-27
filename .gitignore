@@ -14,11 +14,19 @@ good/extensions/*
 !good/extensions/*.output
 !good/extensions/*.exit_code
 
-bad/*
-!bad/*.lat
-!bad/*.input
-!bad/*.output
-!bad/*.exit_code
+bad/basic/*
+!bad/basic/*.lat
+!bad/basic/*.input
+!bad/basic/*.output
+!bad/basic/*.exit_code
+!bad/basic/*.example_compiler_output
+
+bad/extensions/*
+!bad/extensions/*.lat
+!bad/extensions/*.input
+!bad/extensions/*.output
+!bad/extensions/*.exit_code
+!bad/extensions/*.example_compiler_output
 
 warnings/*
 !warnings/*.lat
